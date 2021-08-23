@@ -12,12 +12,9 @@ function addtodo(todo) {
   newli.innerText = todo.todo;
   newul.appendChild(newli);
   newli.addEventListener("click", makeline);
+
   function makeline() {
-    if (newli.style.textDecoration === "none") {
-      newli.style.textDecoration = "line-through";
-    } else {
-      newli.style.textDecoration = "none";
-    }
+    newli.style.textDecoration = "line-through";
   }
 }
 
