@@ -9,3 +9,24 @@ function changecolor() {
   volunteer.style.background = "black";
   volunteer.style.color = "white";
 }
+let orangebutton = document.querySelector("#orangeBtn");
+orangebutton.addEventListener("click", changecolors);
+function changecolors() {
+  let jomborton = document.querySelector(".jumbotron");
+  jomborton.style.background = "#f0ad4e";
+  let donate = document.querySelector(".buttons a");
+  donate.style.backgroundColor = "#5751fd";
+  let volunteer = document.querySelector(".buttons a:nth-child(2)");
+  volunteer.style.background = "#31b0d5";
+  volunteer.style.color = "white";
+}
+let greenbutton = document.querySelector("#greenBtn");
+greenbutton.addEventListener("click", changescolors);
+function changescolors() {
+  let jomborton = document.querySelector(".jumbotron");
+  jomborton.style.background = "#87ca8a ";
+  let donate = document.querySelector(".buttons a");
+  donate.style.backgroundColor = "black ";
+  let volunteer = document.querySelector(".buttons a:nth-child(2)");
+  volunteer.style.background = "# 8c9c08";
+}
