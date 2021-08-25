@@ -30,3 +30,13 @@ function changescolors() {
   let volunteer = document.querySelector(".buttons a:nth-child(2)");
   volunteer.style.background = "# 8c9c08";
 }
+changecolor();
+changecolors();
+changescolors();
+
+let submitbutton = document.querySelector("button[type = submit]");
+submitbutton.addEventListener("click", submiting);
+function submiting() {
+  let username = document.querySelector("#example-text-input");
+  username.style.backgroundColor = "red";
+}
