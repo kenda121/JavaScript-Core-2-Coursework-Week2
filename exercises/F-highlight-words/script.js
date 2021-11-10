@@ -23,9 +23,11 @@ function highlightWords(paragraph, colours) {
     spanword.addEventListener("click", changecolorword);
     function changecolorword() {
       let selectcolor = document.querySelector("select");
-      spanword.style.background = selectcolor.value;
-      if (selectcolor.value === "yellow") {
-        selectcolor.value = "none";
+      //spanword.style.background = selectcolor.value;
+      if (spanword.style.background === selectcolor.value) {
+        spanword.style.background = "";
+      } else {
+        spanword.style.background = selectcolor.value;
       }
     }
   }

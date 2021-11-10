@@ -36,7 +36,10 @@ changescolors();
 
 let submitbutton = document.querySelector("button[type = submit]");
 submitbutton.addEventListener("click", submiting);
-function submiting() {
+function submiting(event) {
+  event.preventDefault();
   let username = document.querySelector("#example-text-input");
-  username.style.backgroundColor = "red";
+  if (username.Value === "null") {
+    username.style.backgroundColor = "red";
+  }
 }
